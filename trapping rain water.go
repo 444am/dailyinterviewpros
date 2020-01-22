@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func trap(height []int) int {
 	left := 0
 	right := len(height) - 1
@@ -28,9 +26,4 @@ func trap(height []int) int {
 	}
 
 	return res
-}
-
-func main() {
-	sample := []int{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}
-	fmt.Println(trap(sample))
 }

@@ -2,7 +2,6 @@ package main
 
 import (
 	"bytes"
-	"fmt"
 	"sort"
 	"strconv"
 )
@@ -38,9 +37,4 @@ func (is intSlice) Less(i, j int) bool {
 
 func (is intSlice) Swap(i, j int) {
 	is[i], is[j] = is[j], is[i]
-}
-
-func main() {
-	a := []int{3, 30, 34, 5, 9}
-	fmt.Println(largestNumber(a))
 }

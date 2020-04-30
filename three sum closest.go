@@ -16,7 +16,7 @@ func threeSumClosest(nums []int, target int) int {
 			switch {
 			case sum == target:
 				return target
-			case sum < target:
+			case sum > target:
 				k--
 			default:
 				j++
